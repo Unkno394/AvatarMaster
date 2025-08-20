@@ -8,18 +8,17 @@
 }
 
 body, html {
-
-font-family: 'Russo One';
-font-style: normal;
-font-weight: 400;
-letter-spacing: 0.06em;
-color: #FFFFFF;
-
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   background: linear-gradient(181.01deg, #B0C8F9 7.2%, #9494FE 60.11%, #6363C8 100.38%);
 }
+
 main {
   position: relative;
   z-index: 1;
@@ -40,13 +39,15 @@ footer {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-.AvatarMast{
-font-family: 'Jersey 15';
-font-style: normal;
-font-weight: 400;
-line-height: 110px;
-color: #FFFFFF;
+
+.AvatarMast {
+  font-family: 'Jersey 15';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110px;
+  color: #FFFFFF;
 }
+
 .input-wrapper {
   display: flex;
   align-items: center;
@@ -56,16 +57,19 @@ color: #FFFFFF;
   padding: 0 10px;
   margin-bottom: 15px;
 }
+
 @media (min-width: 10px) {
   .input-wrapper {
     width: 67%;
   }
 }
+
 @media (min-width: 320px) {
   .input-wrapper {
     width: 67%;
   }
 }
+
 @media (min-width: 425px) {
   .input-wrapper {
     width: 80%;
@@ -83,22 +87,26 @@ color: #FFFFFF;
     width: 80%;
   }
 }
+
 @media (min-width:1440px) {
   .input-wrapper {
     width: 87%;
   }
 }
+
 @media (min-width:2560px) {
   .input-wrapper {
     width: 90%;
   }
 }
+
 .send-icon {
   width: 18px;   
   height: 18px;
   color: #fff;
   transition: opacity 0.2s;   
 }
+
 .send-button {
   flex-shrink: 0;         
   width: 50px;
@@ -118,7 +126,6 @@ color: #FFFFFF;
   background: #3d4758;
 }
 
-
 .chat-wrapper {
   flex-grow: 1; 
   display: flex;
@@ -127,20 +134,19 @@ color: #FFFFFF;
 }
 
 .message {
-font-family: 'Russo One';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.06em;
-color: #FFFFFF;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
   background: #6F8BD2;
   padding: 12px 18px;
   border-radius: 20px;
   max-width: 80%;
   word-wrap: break-word;
 }
-
 
 .message.user {
   text-align: right;
@@ -153,337 +159,340 @@ color: #FFFFFF;
   margin-right: auto;
 }
   
-  .loading-indicator {
-    position: absolute;
-    bottom: -25px;
-    left: 10px;
-    color: white;
+.loading-indicator {
+  position: absolute;
+  bottom: -25px;
+  left: 10px;
+  color: white;
   font-family: 'Russo One';
   font-style: normal;
   font-weight: 400;
-  }
+}
 
-  .footer {
-    background: linear-gradient(90deg, #8181F2 0%, #8787E7 100%);
-    color: #fff;
-    padding: 40px;
-    border-radius: 10px;
+.footer {
+  background: linear-gradient(90deg, #8181F2 0%, #8787E7 100%);
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.phones {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  grid-column: 2 / span 3;
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+  gap: 10px 0;
+}
+
+@media (min-width: 320px) {
+  .phones {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 425px) {
+  .phones {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .phones {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .phones {
+    font-size: 18px;
+  }
+}
+
+.phones p {
+  margin: 5px 0;
+}
+
+.phones p:nth-child(1) { grid-column: 1; grid-row: 1; }
+.phones p:nth-child(2) { grid-column: 3; grid-row: 1; }
+.phones p:nth-child(3) { grid-column: 1; grid-row: 2; }
+.phones p:nth-child(4) { grid-column: 3; grid-row: 2; }
+
+@media (max-width: 768px) {
+  .footer-contacts {
     display: flex;
     flex-direction: column;
-  }
-  .phones {
-    font-family: 'Russo One';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-
-color: #FFFFFF;
-    grid-column: 2 / span 3;
-    display: grid;
-    grid-template-columns: 1fr 10px 1fr;
-    gap: 10px 0;
-  }
-  @media (min-width: 320px) {
-    .phones {
-      font-size: 15px;
-    }
-  }
-  @media (min-width: 425px) {
-    .phones {
-      font-size: 15px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .phones {
-      font-size: 18px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .phones {
-      font-size: 18px;
-    }
-  }
-  
-  .phones p {
-    margin: 5px 0;
-  }
-  
-  .phones p:nth-child(1) { grid-column: 1; grid-row: 1; }
-  .phones p:nth-child(2) { grid-column: 3; grid-row: 1; }
-  .phones p:nth-child(3) { grid-column: 1; grid-row: 2; }
-  .phones p:nth-child(4) { grid-column: 3; grid-row: 2; }
-  
-  @media (max-width: 768px) {
-    .footer-contacts {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      gap: 15px;
-    }
-  
-    .phones {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      width: 100%;
-    }
-  
-    .phones p {
-      margin: 0;
-      width: 100%;
-      text-align: right;
-    }
-  
-  }
-
-  .cat-avatar {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  .mouth {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 0;
-    transition: d 0.4s ease-in-out;
-  }
-  
-  .tear-drop {
-    opacity: 0;
-    animation: dropTear 2s infinite ease-in;
-  }
-  
-  .tear-drop.left {
-    animation-delay: 0s;
-  }
-  
-  .tear-drop.right {
-    animation-delay: 1s;
-  }
-  
-  @keyframes dropTear {
-    0% {
-      transform: translateY(0);
-      opacity: 0;
-    }
-    10% {
-      opacity: 1;
-    }
-    70% {
-      transform: translateY(12px);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(18px);
-      opacity: 0;
-    }
-  }
-  
-  .tear {
-    animation: tearFlow 1.5s ease-in infinite;
-  }
-  
-  .tear-drop {
-    animation: tearDrop 1.5s ease-in infinite;
-    opacity: 0;
-  }
-  
-  @keyframes tearFlow {
-    0% {
-      stroke-dasharray: 0, 10;
-      opacity: 0;
-    }
-    50% {
-      stroke-dasharray: 5, 5;
-      opacity: 1;
-    }
-    100% {
-      stroke-dasharray: 10, 0;
-      opacity: 0;
-    }
-  }
-  
-  @keyframes tearDrop {
-    0%, 20% {
-      opacity: 0;
-    }
-    30% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(8px);
-    }
-  }
-  
-  .mouth.happy {
-    stroke-width: 2;
-    stroke-linecap: round;
-    animation: smileStretch 0.5s ease-out forwards;
-  }
-  
-  @keyframes smileStretch {
-    0% {
-      d: path('M27 50.5C27 50.5 32.4637 51.5 36 51.5C39.5363 51.5 45 50.5 45 50.5');
-    }
-    100% {
-      d: path('M27 50.5C27 50.5 32.4637 53.5 36 53.5C39.5363 53.5 45 50.5 45 50.5');
-    }
-  }
-  
-  .mouth.sad {
-    stroke-width: 2;
-    stroke-linecap: round;
-  }
-  
-  .mouth.angry {
-    stroke-width: 2.5;
-    stroke-linecap: round;
-  }
-  
-  .mouth.neutral {
-    stroke-width: 2;
-    stroke-linecap: round;
-  }
-  
-  .cat-avatar.angry .eyebrows path:first-child {
-    d: path("29 24L20 22"); /* Левая бровь: наклонена вниз к центру */
-  }
-  
-  .cat-avatar.angry .eyebrows path:last-child {
-    d: path("50 22L41 24"); /* Правая бровь: наклонена вниз к центру */
-  }
-  
-  @keyframes frown {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-2px);
-    }
-  }
-  
-  .cat-avatar.laughing .eye {
-    ry: 2;
-  }
-  .cat-avatar.laughing .eyebrows path {
-    transform: rotate(-15deg);
-    transform-origin: center;
-  }
-  
-  .tear-drop {
-    animation: tearDrop 1.5s ease-in infinite;
-    fill: #48DBFB;
-    stroke: none;
-    opacity: 0;
-  }
-  
-  .mouth {
-    stroke: black;
-    stroke-width: 2;
-    fill: none;
-    transition: d 0.4s ease-in-out;
-  }
-  
-  .mouth.happy {
-    animation: smileGrow 0.5s forwards;
-  }
-  
-  @keyframes smileGrow {
-    0% {
-      d: path('M27 50.5C27 50.5 32.4637 51.5 36 51.5C39.5363 51.5 45 50.5 45 50.5');
-    }
-    100% {
-      d: path('M27 50.5C27 50.5 32.4637 53.5 36 53.5C39.5363 53.5 45 50.5 45 50.5');
-    }
-  }
-  
-  .brow {
-    stroke: black;
-    stroke-width: 2;
-    stroke-linecap: round;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .cat-avatar.love {
-    position: relative;
-    overflow: visible;
-  }
-  
-  .hearts-container {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 10;
-  }
-  
-  .heart {
-    position: absolute;
-    font-size: 50px; 
-    color: #ff6b9d;
-    opacity: 0;
-    animation: floatHeartUp 2s infinite ease-out;
-    text-shadow: 0 0 5px rgba(255, 107, 157, 0.7);
-    transform-origin: center bottom;
-    margin-left: -7.5px; 
-  }
-  
-  .heart-mouth {
-    left: 65%;
-    top: 75%;
-    animation-delay: 0s;
-  }
-  
-  .heart-nose {
-    left: 20%;
-    top: 50%;
-    animation-delay: 0.3s;
-  }
-  
-  .heart-eyes {
-    left: 60%;
-    top: 30%;
-    animation-delay: 0.6s;
-  }
-  
-  @keyframes floatHeartUp {
-    0% {
-      transform: translateY(0) scale(0.7);
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-      transform: translateY(-10px) scale(1);
-    }
-    60% {
-      opacity: 0.8;
-      transform: translateY(-40px) scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(-80px) scale(0.7);
-    }
+    gap: 15px;
   }
 
-  .cat-avatar.love .eyebrows path:first-child {
-    d: path("M20 24L29 22");
+  .phones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
   }
-  .cat-avatar.love .eyebrows path:last-child {
-    d: path("M41 22L50 24");
+
+  .phones p {
+    margin: 0;
+    width: 100%;
+    text-align: right;
   }
-  .cat-avatar.laughing .mouth {
-    d: path('M27 50.5C27 50.5 32.4637 55.5 36 55.5C39.5363 55.5 45 50.5 45 50.5');
-    stroke-width: 2.5;
+}
+
+.cat-avatar {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mouth {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  transition: d 0.4s ease-in-out;
+}
+
+.tear-drop {
+  opacity: 0;
+  animation: dropTear 2s infinite ease-in;
+}
+
+.tear-drop.left {
+  animation-delay: 0s;
+}
+
+.tear-drop.right {
+  animation-delay: 1s;
+}
+
+@keyframes dropTear {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
   }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(18px);
+    opacity: 0;
+  }
+}
+
+.tear {
+  animation: tearFlow 1.5s ease-in infinite;
+}
+
+.tear-drop {
+  animation: tearDrop 1.5s ease-in infinite;
+  opacity: 0;
+}
+
+@keyframes tearFlow {
+  0% {
+    stroke-dasharray: 0, 10;
+    opacity: 0;
+  }
+  50% {
+    stroke-dasharray: 5, 5;
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 10, 0;
+    opacity: 0;
+  }
+}
+
+@keyframes tearDrop {
+  0%, 20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.mouth.happy {
+  stroke-width: 2;
+  stroke-linecap: round;
+  animation: smileStretch 0.5s ease-out forwards;
+}
+
+@keyframes smileStretch {
+  0% {
+    d: path('M27 50.5C27 50.5 32.4637 51.5 36 51.5C39.5363 51.5 45 50.5 45 50.5');
+  }
+  100% {
+    d: path('M27 50.5C27 50.5 32.4637 53.5 36 53.5C39.5363 53.5 45 50.5 45 50.5');
+  }
+}
+
+.mouth.sad {
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.mouth.angry {
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.mouth.neutral {
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.cat-avatar.angry .eyebrows path:first-child {
+  d: path("29 24L20 22");
+}
+
+.cat-avatar.angry .eyebrows path:last-child {
+  d: path("50 22L41 24");
+}
+
+@keyframes frown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+.cat-avatar.laughing .eye {
+  ry: 2;
+}
+
+.cat-avatar.laughing .eyebrows path {
+  transform: rotate(-15deg);
+  transform-origin: center;
+}
+
+.tear-drop {
+  animation: tearDrop 1.5s ease-in infinite;
+  fill: #48DBFB;
+  stroke: none;
+  opacity: 0;
+}
+
+.mouth {
+  stroke: black;
+  stroke-width: 2;
+  fill: none;
+  transition: d 0.4s ease-in-out;
+}
+
+.mouth.happy {
+  animation: smileGrow 0.5s forwards;
+}
+
+@keyframes smileGrow {
+  0% {
+    d: path('M27 50.5C27 50.5 32.4637 51.5 36 51.5C39.5363 51.5 45 50.5 45 50.5');
+  }
+  100% {
+    d: path('M27 50.5C27 50.5 32.4637 53.5 36 53.5C39.5363 53.5 45 50.5 45 50.5');
+  }
+}
+
+.brow {
+  stroke: black;
+  stroke-width: 2;
+  stroke-linecap: round;
+  transition: all 0.3s ease-in-out;
+}
+
+.cat-avatar.love {
+  position: relative;
+  overflow: visible;
+}
+
+.hearts-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.heart {
+  position: absolute;
+  font-size: 50px; 
+  color: #ff6b9d;
+  opacity: 0;
+  animation: floatHeartUp 2s infinite ease-out;
+  text-shadow: 0 0 5px rgba(255, 107, 157, 0.7);
+  transform-origin: center bottom;
+  margin-left: -7.5px; 
+}
+
+.heart-mouth {
+  left: 65%;
+  top: 75%;
+  animation-delay: 0s;
+}
+
+.heart-nose {
+  left: 20%;
+  top: 50%;
+  animation-delay: 0.3s;
+}
+
+.heart-eyes {
+  left: 60%;
+  top: 30%;
+  animation-delay: 0.6s;
+}
+
+@keyframes floatHeartUp {
+  0% {
+    transform: translateY(0) scale(0.7);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1);
+  }
+  60% {
+    opacity: 0.8;
+    transform: translateY(-40px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80px) scale(0.7);
+  }
+}
+
+.cat-avatar.love .eyebrows path:first-child {
+  d: path("M20 24L29 22");
+}
+
+.cat-avatar.love .eyebrows path:last-child {
+  d: path("M41 22L50 24");
+}
+
+.cat-avatar.laughing .mouth {
+  d: path('M27 50.5C27 50.5 32.4637 55.5 36 55.5C39.5363 55.5 45 50.5 45 50.5');
+  stroke-width: 2.5;
+}
 
 .eye, .eyebrows path, .mouth {
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -567,15 +576,15 @@ color: #FFFFFF;
 
 @keyframes catBlink {
   0%, 45%, 55%, 100% {
-    ry: 5; /* Открытые глаза */
+    ry: 5;
     transform: scaleY(1);
   }
   48%, 52% {
-    ry: 0.5; /* Полузакрытые глаза */
+    ry: 0.5;
     transform: scaleY(0.3);
   }
   50% {
-    ry: 0.2; /* Полностью закрытые глаза */
+    ry: 0.2;
     transform: scaleY(0.1);
   }
 }
@@ -600,17 +609,17 @@ color: #FFFFFF;
   transform: scaleY(1.1);
   transition: all 0.3s ease;
 }
+
 .cat-avatar.curious {
   animation: curiousTilt 2s infinite ease-in-out;
 }
 
 .cat-avatar.curious .eye {
-  transform: scale(1.2) translateY(-1px); /* глаза больше */
-  ry: 6 !important; /* ещё более открытые глаза */
+  transform: scale(1.2) translateY(-1px);
+  ry: 6 !important;
   transition: all 0.3s ease;
 }
 
-/* Наклон головы при любопытстве */
 @keyframes curiousTilt {
   0%, 100% {
     transform: rotate(0deg) scale(1.02);
@@ -643,7 +652,7 @@ color: #FFFFFF;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(74, 85, 104, 0.85); /* тёмный базовый */
+  background: rgba(74, 85, 104, 0.85);
   animation: bounceGlow 1.4s infinite ease-in-out;
 }
 
@@ -654,27 +663,27 @@ color: #FFFFFF;
 @keyframes bounceGlow {
   0%, 100% {
     transform: translateY(0);
-    background: rgba(74, 85, 104, 0.85); /* тёмный */
+    background: rgba(74, 85, 104, 0.85);
   }
   40% {
-    transform: translateY(-3px); /* менее заметный прыжок */
-    background: rgba(160, 174, 192, 1); /* светлый */
+    transform: translateY(-3px);
+    background: rgba(160, 174, 192, 1);
   }
 }
 
-
 .send-button:disabled {
-  background: #3d4758; /* Темнее обычного цвета */
-  cursor: not-allowed; /* Курсор "недоступно" */
+  background: #3d4758;
+  cursor: not-allowed;
 }
 
 .send-button:disabled:hover {
-  background: #3d4758; /* Убираем эффект hover */
+  background: #3d4758;
 }
 
 .send-button:disabled .send-icon {
-  opacity: 0.5; /* Делаем иконку полупрозрачной */
+  opacity: 0.5;
 }
+
 .send-button:active {
   transform: scale(0.95);
   transition: transform 0.1s;
@@ -684,9 +693,11 @@ color: #FFFFFF;
   background: #3d4758;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+
 .message {
   animation: messageAppear 0.3s ease-out;
 }
+
 @keyframes messageAppear {
   from {
     opacity: 0;
@@ -698,5 +709,44 @@ color: #FFFFFF;
   }
 }
 
+@media (max-width: 425px) {
+  .chat-wrapper {
+    width: 95vw !important;
+    height: 300px !important;
+    min-height: 300px;
+  }
+  
+  .message {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    padding: 10px 14px !important;
+    max-width: 90% !important;
+  }
+  
+  .input-wrapper {
+    width: 95% !important;
+    padding: 0 5px !important;
+  }
+  
+  input[type="text"] {
+    font-size: 14px !important;
+    height: 44px !important;
+  }
+  
+  .send-button {
+    width: 44px !important;
+    height: 44px !important;
+  }
+}
 
-
+@media (max-width: 320px) {
+  .chat-wrapper {
+    height: 250px !important;
+    min-height: 250px;
+  }
+  
+  .message {
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+  }
+}

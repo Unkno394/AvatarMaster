@@ -1,4 +1,4 @@
-// app/not-found.js
+
 import Link from 'next/link';
 
 export default function NotFound() {
@@ -35,7 +35,7 @@ export default function NotFound() {
           </p>
           
           {/* Грустный кот с анимациями */}
-          <div className="flex justify-center mb-[50px]"> {/* Добавлен margin-bottom 50px */}
+          <div className="flex justify-center mb-[50px]">
             <div className="cat-avatar sad w-[200px] h-[200px] sm:w-[300px] sm:h-[300px]">
               <svg width="100%" height="100%" viewBox="0 0 71 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {/* Уши */}
@@ -101,3 +101,6 @@ export default function NotFound() {
     </div>
   );
 }
+
+
+

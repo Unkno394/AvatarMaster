@@ -1,0 +1,118 @@
+/* src/styles/animations.css */
+@keyframes subtleBreathing {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+  }
+  
+  @keyframes sadHeadMovement {
+    0%, 100% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(1deg);
+    }
+  }
+  
+  @keyframes angryShake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-1px);
+    }
+    75% {
+      transform: translateX(1px);
+    }
+  }
+  
+  @keyframes happyBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes catBlink {
+    0%, 45%, 55%, 100% {
+      ry: 5;
+      transform: scaleY(1);
+    }
+    48%, 52% {
+      ry: 0.5;
+      transform: scaleY(0.3);
+    }
+    50% {
+      ry: 0.2;
+      transform: scaleY(0.1);
+    }
+  }
+  
+  @keyframes curiousTilt {
+    0%, 100% {
+      transform: rotate(0deg) scale(1.02);
+    }
+    50% {
+      transform: rotate(-4deg) scale(1.05);
+    }
+  }
+  
+  @keyframes bounceGlow {
+    0%, 100% {
+      transform: translateY(0);
+      background: rgba(74, 85, 104, 0.85);
+    }
+    40% {
+      transform: translateY(-3px);
+      background: rgba(160, 174, 192, 1);
+    }
+  }
+  
+  @keyframes messageAppear {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes floatHeartUp {
+    0% {
+      transform: translateY(0) scale(0.7);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(-10px) scale(1);
+    }
+    60% {
+      opacity: 0.8;
+      transform: translateY(-40px) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-80px) scale(0.7);
+    }
+  }
+  
+  @keyframes tearDrop {
+    0%, 20% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+  

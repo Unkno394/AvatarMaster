@@ -1,3 +1,4 @@
+
 import { Geist, Geist_Mono, Jersey_15, Russo_One } from "next/font/google";
 import "./globals.css";
 
@@ -33,3 +34,6 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
+
