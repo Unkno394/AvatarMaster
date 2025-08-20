@@ -25,11 +25,6 @@ main {
   padding-top: 150px; 
   text-align: center;
 }
-
-footer {
-  display: none;
-}
-
 .fade-in-simultaneous {
   opacity: 0;
   animation: fadeIn 0.8s ease-in forwards;

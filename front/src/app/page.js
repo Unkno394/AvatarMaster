@@ -1,15 +1,17 @@
-// src/app/page.js
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
 import ChatWidget from '@/widgets/chat-widget/chat-widget';
+import Logo from "@/shared/ui/icons/logo";
 
 export default function Home() {
   return (
     <>
       <div className="flex gap-5 md:gap-[70px] fade-in-simultaneous">
-        <img className="mt-5 w-[70px] p-[10px_0px_15px_10px] sm:w-[80px] sm:mt-[19px] md:w-[160px] md:p-[0px_0px_15px_50px]"  src="/Group 195.svg" alt="AvatarMaster logo"  />
-        <h1 className="mt-5 font-[var(--font-jersey)] text-white text-[38px] sm:text-[50px] md:text-[90px] 2xl:text-[110px] leading-[110px] AvatarMast">AvatarMaster</h1>
+        <Logo className="mt-5 w-[70px] p-[10px_0px_15px_10px] sm:w-[80px] sm:mt-[19px] md:w-[160px] md:p-[0px_0px_15px_50px]" />
+        <h1 className="mt-5 font-[var(--font-jersey)] text-white text-[38px] sm:text-[50px] md:text-[90px] 2xl:text-[110px] leading-[110px] AvatarMast">
+          AvatarMaster
+        </h1>
       </div>
       <main className="relative z-10 pt-[150px] text-center fade-in-simultaneous">
         <hr className="h-[35px] bg-[#F6F3FF] -mt-[108px] border-0"></hr>
