@@ -1,4 +1,3 @@
-// src/entities/chat/model/store.js
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 

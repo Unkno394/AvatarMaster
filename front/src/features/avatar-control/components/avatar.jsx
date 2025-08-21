@@ -1,4 +1,3 @@
-// src/features/avatar-control/components/avatar.jsx
 'use client';
 
 import { useAvatarEmotion } from '../hooks/use-avatar-emotion';

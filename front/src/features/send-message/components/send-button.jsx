@@ -1,4 +1,3 @@
-// src/features/send-message/components/send-button.jsx
 'use client';
 
 import { SendIcon } from '@/shared/ui/icons/send-icon';

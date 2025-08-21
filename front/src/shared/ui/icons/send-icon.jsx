@@ -1,4 +1,3 @@
-// src/shared/ui/icons/send-icon.jsx
 'use client';
 
 export const SendIcon = ({ disabled = false, className = "" }) => {

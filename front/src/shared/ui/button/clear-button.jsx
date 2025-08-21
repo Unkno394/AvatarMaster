@@ -1,4 +1,3 @@
-// src/shared/ui/button/clear-button.jsx
 'use client';
 
 export const ClearButton = ({ onClick }) => {

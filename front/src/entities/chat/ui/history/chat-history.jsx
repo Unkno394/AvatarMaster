@@ -1,4 +1,3 @@
-// src/entities/chat/ui/history/chat-history.jsx
 'use client';
 
 import { Message } from '../message/message';

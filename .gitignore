@@ -42,3 +42,7 @@ next-env.d.ts
 
 # ML models
 *.gguf
+
+.env
+*.env
+.env.local

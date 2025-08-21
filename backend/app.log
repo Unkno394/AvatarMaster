@@ -1,0 +1,24 @@
+2025-08-20 23:41:04,227 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-08-20 23:41:04,228 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-20 23:41:04,232 - INFO -  * Restarting with stat
+2025-08-20 23:42:22,035 - WARNING -  * Debugger is active!
+2025-08-20 23:42:22,047 - INFO -  * Debugger PIN: 172-794-988
+2025-08-20 23:42:22,090 - INFO - 127.0.0.1 - - [20/Aug/2025 23:42:22] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-20 23:43:13,174 - INFO - 127.0.0.1 - - [20/Aug/2025 23:43:13] "POST /ask HTTP/1.1" 200 -
+2025-08-20 23:53:57,326 - INFO -  * Detected change in 'C:\\Users\\User\\Desktop\\ûûûû\\AvatarMaster\\backend\\app.py', reloading
+2025-08-20 23:54:01,048 - INFO -  * Restarting with stat
+2025-08-20 23:55:06,702 - WARNING -  * Debugger is active!
+2025-08-20 23:55:06,717 - INFO -  * Debugger PIN: 172-794-988
+2025-08-20 23:55:06,753 - INFO - 127.0.0.1 - - [20/Aug/2025 23:55:06] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-20 23:55:54,748 - INFO - 127.0.0.1 - - [20/Aug/2025 23:55:54] "POST /ask HTTP/1.1" 200 -
+2025-08-20 23:56:18,458 - INFO - 127.0.0.1 - - [20/Aug/2025 23:56:18] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-20 23:56:25,052 - INFO - 127.0.0.1 - - [20/Aug/2025 23:56:25] "POST /ask HTTP/1.1" 200 -
+2025-08-21 00:00:10,975 - INFO -  * Detected change in 'C:\\Users\\User\\Desktop\\ûûûû\\AvatarMaster\\backend\\app.py', reloading
+2025-08-21 00:00:14,143 - INFO -  * Restarting with stat
+2025-08-21 00:01:13,360 - WARNING -  * Debugger is active!
+2025-08-21 00:01:13,371 - INFO -  * Debugger PIN: 172-794-988
+2025-08-21 00:01:28,163 - INFO - 127.0.0.1 - - [21/Aug/2025 00:01:28] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-21 00:02:17,219 - INFO - 127.0.0.1 - - [21/Aug/2025 00:02:17] "POST /ask HTTP/1.1" 200 -
+2025-08-21 00:03:14,814 - INFO - 127.0.0.1 - - [21/Aug/2025 00:03:14] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-21 00:03:42,191 - INFO - 127.0.0.1 - - [21/Aug/2025 00:03:42] "POST /ask HTTP/1.1" 200 -

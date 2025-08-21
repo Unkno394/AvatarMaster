@@ -1,4 +1,3 @@
-// src/features/send-message/hooks/use-send-message.js
 'use client';
 
 import { useState } from 'react';

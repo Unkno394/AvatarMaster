@@ -1,4 +1,3 @@
-// src/entities/chat/ui/input/chat-input.jsx
 'use client';
 
 export const ChatInput = ({ 

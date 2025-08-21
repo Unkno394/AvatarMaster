@@ -1,4 +1,3 @@
-// src/entities/chat/ui/message/message.jsx
 'use client';
 
 export const Message = ({ text, sender, loading = false }) => {

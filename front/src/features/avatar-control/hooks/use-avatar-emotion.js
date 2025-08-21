@@ -1,4 +1,3 @@
-// src/features/avatar-control/hooks/use-avatar-emotion.js
 'use client';
 
 import { useState, useEffect } from 'react';

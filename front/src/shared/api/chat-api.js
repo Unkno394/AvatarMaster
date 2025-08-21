@@ -1,8 +1,7 @@
-// src/shared/api/chat-api.js
 import { ERROR_TYPES } from '@/entities/chat/model/types';
 
 const API_CONFIG = {
-  BASE_URL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000",
+  BASE_URL: process.env.NEXT_PUBLIC_API_URL,
   ENDPOINT: "/ask"
 };
 

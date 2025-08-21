@@ -1,4 +1,3 @@
-// src/shared/types/chat.js
 export const MessageType = {
     USER: 'user',
     AI: 'ai'

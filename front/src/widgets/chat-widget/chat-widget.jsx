@@ -1,4 +1,3 @@
-// src/widgets/chat-widget/chat-widget.jsx
 'use client';
 
 import { useState, useRef, useEffect } from 'react';

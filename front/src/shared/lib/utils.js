@@ -1,4 +1,3 @@
-// src/shared/lib/utils.js
 export const validateMessage = (message) => {
   if (!message.trim()) {
     return { isValid: false, error: "Сообщение не может быть пустым" };

@@ -42,3 +42,5 @@ next-env.d.ts
 
 # ML models
 *.gguf
+
+.vercel

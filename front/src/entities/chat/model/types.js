@@ -1,4 +1,3 @@
-
 export const MESSAGE_TYPES = {
   USER: 'user',
   AI: 'ai'
