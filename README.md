@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![AvatarMaster Logo](https://avatar-master-iwgmw58z8-xovanskis-projects.vercel.app/Group%20195.svg)
+![AvatarMaster Logo](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTU5IiBoZWlnaHQ9IjE2NCIgdmlld0JveD0iMCAwIDE1OSAxNjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxlbGxpcHNlIGN4PSI3OS40NTc4IiBjeT0iODEuNzgyNyIgcng9Ijc5LjQ1NzgiIHJ5PSI4MS43ODI3IiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMTY1Xzg5KSIvPgo8cGF0aCBkPSJNNTcuMDY3NiA0M0g0Ni45NzNDNDQuNTkzMiA0MyA0Mi4zMTA5IDQzLjg3NyA0MC42MjgxIDQ1LjQzODFDMzguOTQ1NCA0Ni45OTkzIDM4IDQ5LjExNjYgMzggNTEuMzI0M1Y2MC42ODkyTTEyMSA2MC42ODkyVjUxLjMyNDNDMTIxIDQ5LjExNjYgMTIwLjA1NSA0Ni45OTkzIDExOC4zNzIgNDUuNDM4MUMxMTYuNjg5IDQzLjg3NyAxMTQuNDA3IDQzIDExMi4wMjcgNDNIMTAxLjkzMk0xMDEuOTMyIDEyMEgxMTIuMDI3QzExNC40MDcgMTIwIDExNi42ODkgMTE5LjEyMyAxMTguMzcyIDExNy41NjJDMTIwLjA1NSAxMTYuMDAxIDEyMSAxMTMuODgzIDEyMSAxMTEuNjc2VjEwMi4zMTFNMzggMTAyLjMxMVYxMTEuNjc2QzM4IDExMy44ODMgMzguOTQ1NCAxMTYuMDAxIDQwLjYyODEgMTE3LjU2MkM0Mi4zMTA5IDExOS4xMjMgNDQuNTkzMiAxMjAgNDYuOTczIDEyMEg1Ny4wNjc2TTYyLjE4NDQgNzMuMzA2OFY2NS44OTE5TTk2LjgxNTYgNzMuMzA2OFY2NS44OTE5TTc0LjE3MjMgOTAuNjA0N0g3Ni44MzczQzc4LjI1MDMgOTAuNjA0NyA3OS42MDU0IDkwLjA4NCA4MC42MDQ1IDg5LjE1NzFDODEuNjAzNyA4OC4yMzAyIDgyLjE2NSA4Ni45NzMgODIuMTY1IDg1LjY2MjJWNjUuODkxOU05NS40ODMxIDk4LjcxNjhDOTEuMTQwMiAxMDQuMDU3IDg0LjUwOTIgMTA1LjQzMiA3OS41IDEwNS40MzJDNzQuNDkwOCAxMDUuNDMyIDY3Ljg1OTggMTA0LjA1OSA2My41MTY5IDk4LjcxNjgiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTY1Xzg5IiB4MT0iMzMiIHkxPSI1IiB4Mj0iMTE4LjEyMiIgeTI9IjE3NS4zODIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzU4NzlDQSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IndoaXRlIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==)
 
 **Интерактивный чат-бот с эмоциональным котом-аватаром**
 
@@ -34,6 +34,7 @@ AvatarMaster — это интерактивный веб-чат, где пол�
 
 Проект следует методологии Feature-Sliced Design (FSD), что обеспечивает его исключительную масштабируемость, поддерживаемость и чистоту кода. Архитектура четко разделяет ответственность между слоями
 
+```bash
 src/
 ├── app/ # Роутинг, layout и страницы Next.js (Слой Pages)
 │ ├── layout.js # Корневой layout с провайдерами шрифтов
@@ -75,6 +76,7 @@ src/
 │ └── index.js
 └── styles/ # Глобальные стили (альтернатива app/globals.css)
 └── globals.css
+```
 
 ## 🛠 Установка и запуск
 
