@@ -745,3 +745,45 @@ main {
     padding: 8px 12px !important;
   }
 }
+
+/* Анимация для удивлённого кота */
+.cat-avatar.surprised {
+  animation: surprisedBounce 2s infinite ease-in-out;
+}
+
+@keyframes surprisedBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Удивлённые брови */
+.cat-avatar.surprised .brow.surprised {
+  animation: browRaise 1.5s infinite alternate;
+}
+
+@keyframes browRaise {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+/* Пульсирующие глаза при удивлении */
+.cat-avatar.surprised .eye {
+  animation: eyePulse 1s infinite alternate;
+}
+
+@keyframes eyePulse {
+  0% {
+    r: 4;
+  }
+  100% {
+    r: 4.5;
+  }
+}

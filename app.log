@@ -40,3 +40,94 @@
 2025-08-20 23:11:47,965 - INFO -  * Debugger PIN: 172-794-988
 2025-08-20 23:11:48,005 - INFO - 127.0.0.1 - - [20/Aug/2025 23:11:48] "OPTIONS /ask HTTP/1.1" 200 -
 2025-08-20 23:12:24,546 - INFO - 127.0.0.1 - - [20/Aug/2025 23:12:24] "POST /ask HTTP/1.1" 200 -
+2025-08-23 02:08:28,401 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.13:5000
+2025-08-23 02:08:28,402 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-23 02:08:28,408 - INFO -  * Restarting with stat
+2025-08-23 02:09:42,954 - WARNING -  * Debugger is active!
+2025-08-23 02:09:42,966 - INFO -  * Debugger PIN: 172-794-988
+2025-08-23 02:09:43,004 - INFO - 127.0.0.1 - - [23/Aug/2025 02:09:43] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 02:10:42,798 - INFO - 127.0.0.1 - - [23/Aug/2025 02:10:42] "POST /ask HTTP/1.1" 200 -
+2025-08-23 02:11:00,681 - INFO - 127.0.0.1 - - [23/Aug/2025 02:11:00] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 02:11:53,970 - INFO - 127.0.0.1 - - [23/Aug/2025 02:11:53] "POST /ask HTTP/1.1" 200 -
+2025-08-23 02:14:15,257 - INFO -  * Detected change in 'c:\\Users\\User\\Desktop\\ûûûû\\AvatarMaster\\backend\\services\\emotion_service.py', reloading
+2025-08-23 02:16:23,273 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.13:5000
+2025-08-23 02:16:23,273 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-23 02:16:23,278 - INFO -  * Restarting with stat
+2025-08-23 02:18:03,251 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.13:5000
+2025-08-23 02:18:03,252 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-23 02:18:03,259 - INFO -  * Restarting with stat
+2025-08-23 02:19:40,279 - WARNING -  * Debugger is active!
+2025-08-23 02:19:40,293 - INFO -  * Debugger PIN: 172-794-988
+2025-08-23 02:19:40,334 - INFO - 127.0.0.1 - - [23/Aug/2025 02:19:40] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 02:20:25,302 - INFO - 127.0.0.1 - - [23/Aug/2025 02:20:25] "POST /ask HTTP/1.1" 200 -
+2025-08-23 02:20:29,901 - INFO - 127.0.0.1 - - [23/Aug/2025 02:20:29] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 02:21:02,770 - INFO - 127.0.0.1 - - [23/Aug/2025 02:21:02] "POST /ask HTTP/1.1" 200 -
+2025-08-23 02:21:59,869 - INFO - 127.0.0.1 - - [23/Aug/2025 02:21:59] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 02:22:31,422 - INFO - 127.0.0.1 - - [23/Aug/2025 02:22:31] "POST /ask HTTP/1.1" 200 -
+2025-08-23 04:47:33,320 - INFO - 127.0.0.1 - - [23/Aug/2025 04:47:33] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 04:48:16,771 - INFO - 127.0.0.1 - - [23/Aug/2025 04:48:16] "POST /ask HTTP/1.1" 200 -
+2025-08-23 04:48:27,412 - INFO -  * Detected change in 'c:\\Users\\User\\Desktop\\ûûûû\\AvatarMaster\\backend\\services\\emotion_service.py', reloading
+2025-08-23 04:48:37,814 - INFO -  * Restarting with stat
+2025-08-23 04:50:38,338 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.13:5000
+2025-08-23 04:50:38,338 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-23 04:50:38,347 - INFO -  * Restarting with stat
+2025-08-23 04:52:12,802 - WARNING -  * Debugger is active!
+2025-08-23 04:52:12,813 - INFO -  * Debugger PIN: 172-794-988
+2025-08-23 04:52:12,856 - INFO - 127.0.0.1 - - [23/Aug/2025 04:52:12] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 04:52:57,478 - INFO - 127.0.0.1 - - [23/Aug/2025 04:52:57] "POST /ask HTTP/1.1" 200 -
+2025-08-23 04:53:04,197 - INFO - 127.0.0.1 - - [23/Aug/2025 04:53:04] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 04:53:34,723 - INFO - 127.0.0.1 - - [23/Aug/2025 04:53:34] "POST /ask HTTP/1.1" 200 -
+2025-08-23 04:58:08,695 - INFO - 127.0.0.1 - - [23/Aug/2025 04:58:08] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 04:58:24,496 - INFO - 127.0.0.1 - - [23/Aug/2025 04:58:24] "POST /ask HTTP/1.1" 200 -
+2025-08-23 05:00:23,533 - INFO - 127.0.0.1 - - [23/Aug/2025 05:00:23] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 05:00:31,764 - INFO - 127.0.0.1 - - [23/Aug/2025 05:00:31] "POST /ask HTTP/1.1" 200 -
+2025-08-23 05:03:58,932 - INFO - 127.0.0.1 - - [23/Aug/2025 05:03:58] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 05:04:10,518 - INFO - 127.0.0.1 - - [23/Aug/2025 05:04:10] "POST /ask HTTP/1.1" 200 -
+2025-08-23 05:04:55,894 - INFO - 127.0.0.1 - - [23/Aug/2025 05:04:55] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-23 05:05:00,133 - INFO - 127.0.0.1 - - [23/Aug/2025 05:05:00] "POST /ask HTTP/1.1" 200 -
+2025-08-24 03:03:39,478 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.13:5000
+2025-08-24 03:03:39,479 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 03:03:39,487 - INFO -  * Restarting with stat
+2025-08-24 03:06:11,448 - WARNING -  * Debugger is active!
+2025-08-24 03:06:11,460 - INFO -  * Debugger PIN: 172-794-988
+2025-08-24 03:08:33,988 - INFO -  * Detected change in 'c:\\Users\\User\\Desktop\\ûûûû\\AvatarMaster\\backend\\services\\emotion_service.py', reloading
+2025-08-24 03:08:37,940 - INFO -  * Restarting with stat
+2025-08-24 03:10:52,778 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.13:5000
+2025-08-24 03:10:52,779 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 03:10:52,784 - INFO -  * Restarting with stat
+2025-08-24 03:12:53,818 - WARNING -  * Debugger is active!
+2025-08-24 03:12:53,830 - INFO -  * Debugger PIN: 172-794-988
+2025-08-24 03:12:53,867 - INFO - 127.0.0.1 - - [24/Aug/2025 03:12:53] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-24 03:13:25,012 - INFO - 127.0.0.1 - - [24/Aug/2025 03:13:25] "POST /ask HTTP/1.1" 200 -
+2025-08-24 03:22:34,817 - INFO - 127.0.0.1 - - [24/Aug/2025 03:22:34] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-24 03:22:43,241 - INFO - 127.0.0.1 - - [24/Aug/2025 03:22:43] "POST /ask HTTP/1.1" 200 -
+2025-08-24 03:30:49,211 - INFO - 127.0.0.1 - - [24/Aug/2025 03:30:49] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-24 03:31:02,820 - INFO - 127.0.0.1 - - [24/Aug/2025 03:31:02] "POST /ask HTTP/1.1" 200 -
+2025-08-24 03:32:48,458 - INFO - 127.0.0.1 - - [24/Aug/2025 03:32:48] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-24 03:32:53,046 - INFO - 127.0.0.1 - - [24/Aug/2025 03:32:53] "POST /ask HTTP/1.1" 200 -
+2025-08-24 03:38:38,610 - INFO - 127.0.0.1 - - [24/Aug/2025 03:38:38] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-24 03:38:49,250 - INFO - 127.0.0.1 - - [24/Aug/2025 03:38:49] "POST /ask HTTP/1.1" 200 -
+2025-08-24 03:40:20,203 - INFO - 127.0.0.1 - - [24/Aug/2025 03:40:20] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-24 03:40:24,575 - INFO - 127.0.0.1 - - [24/Aug/2025 03:40:24] "POST /ask HTTP/1.1" 200 -
+2025-08-24 03:44:36,463 - INFO - 127.0.0.1 - - [24/Aug/2025 03:44:36] "OPTIONS /ask HTTP/1.1" 200 -
+2025-08-24 03:44:44,633 - INFO - 127.0.0.1 - - [24/Aug/2025 03:44:44] "POST /ask HTTP/1.1" 200 -
+2025-08-24 04:02:54,853 - INFO -  * Detected change in 'c:\\Users\\User\\Desktop\\ûûûû\\AvatarMaster\\backend\\services\\emotion_service.py', reloading
+2025-08-24 04:03:06,188 - INFO -  * Restarting with stat

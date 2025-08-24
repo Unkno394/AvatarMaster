@@ -115,3 +115,86 @@
     }
   }
   
+  /* Улучшенные анимации для удивлённого кота */
+.cat-avatar.surprised {
+  animation: surprisedPop 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+@keyframes surprisedPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* Анимация поднятия бровей */
+.cat-avatar.surprised .brow.surprised {
+  animation: browSurprised 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes browSurprised {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Пульсирующие глаза при удивлении */
+.cat-avatar.surprised .eye {
+  animation: eyeSurprised 1s ease-in-out infinite alternate;
+}
+
+@keyframes eyeSurprised {
+  0% {
+    r: 4;
+    fill: black;
+  }
+  50% {
+    r: 4.8;
+    fill: #333;
+  }
+  100% {
+    r: 4.5;
+    fill: black;
+  }
+}
+
+/* Анимация ротика (пульсация) */
+.cat-avatar.surprised .mouth {
+  animation: mouthSurprised 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes mouthSurprised {
+  0% {
+    r: 2.5;
+    fill: black;
+  }
+  100% {
+    r: 3.2;
+    fill: #444;
+  }
+}
+
+/* Дрожание при удивлении */
+@keyframes surprisedShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+}
+
+.cat-avatar.surprised:hover {
+  animation: surprisedShake 0.3s ease-in-out infinite;
+}

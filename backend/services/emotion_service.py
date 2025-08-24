@@ -1,49 +1,58 @@
-from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
+import os
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 
 class EmotionService:
     def __init__(self):
         self.classifier = self._load_model()
     
     def _load_model(self):
-        model_name = "blanchefort/rubert-base-cased-sentiment"
+        model_path = os.path.join(
+            os.path.dirname(__file__), "models", "big_Emotions_model"
+        )
         try:
-            print(f"Загружаем модель: {model_name}")
-            tokenizer = AutoTokenizer.from_pretrained(model_name)
-            model = AutoModelForSequenceClassification.from_pretrained(model_name)
+            print(f"🔍 Загружаем кастомную модель эмоций из: {model_path}")
+            tokenizer = AutoTokenizer.from_pretrained(model_path)
+            model = AutoModelForSequenceClassification.from_pretrained(model_path)
             return pipeline("text-classification", model=model, tokenizer=tokenizer)
         except Exception as e:
-            print(f"Ошибка загрузки {model_name}: {str(e)}")
+            print(f"❌ Ошибка загрузки модели эмоций: {e}")
             return None
     
     def detect_emotion(self, text: str) -> str:
         if not text:
             return "neutral"
-            
+        
         text_lower = text.lower()
 
         if self.classifier:
             try:
                 result = self.classifier(text)[0]
-                label = result["label"].lower()
-                
+                raw_label = result["label"].lower()
+
                 label_map = {
-                    "positive": "happy",
-                    "negative": "sad", 
+                    "surprise": "surprised",    
+                    "laugh": "laughing",        
+                    "curiosity": "curious",     
+                    "angry": "angry",
+                    "happy": "happy",
+                    "sad": "sad", 
+                    "love": "love",
                     "neutral": "neutral"
                 }
-                
-                if label in label_map:
-                    return label_map[label]
+                emotion = label_map.get(raw_label, raw_label)
+                return emotion
             except Exception as e:
-                print(f"Ошибка модели эмоций: {e}")
+                print(f"⚠️ Ошибка при предсказании эмоции: {e}")
 
-        # Если модель не сработала - эвристика
+        # Резервная эвристика с синхронизированными названиями
         emotion_keywords = {
             "sad": ["болезнь", "умер", "потерял", "груст", "плохо", "забол", "больн", "операц"],
             "angry": ["зл", "бесит", "ненавижу", "разоз", "ярост", "злюсь", "сердит", "раздраж"],
             "happy": ["рад", "счаст", "весел", "ура", "класс", "круто", "хорошо", "отлич"],
             "love": ["любл", "обожаю", "дорог", "мил", "сердечк", "нежн"],
-            "curious": ["интерес", "удивит", "любопыт", "хочу знать", "почему", "как"]
+            "curious": ["интерес", "удивит", "любопыт", "хочу знать", "почему", "как"],
+            "surprised": ["вау", "ого", "невероят", "удивитель", "сюрприз", "не ожидал", "вот это да", "ничего себе"],
+            "laughing": ["смеюсь", "смешно", "ахах", "лол", "ржу"]
         }
         
         for emotion, keywords in emotion_keywords.items():

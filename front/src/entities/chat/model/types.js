@@ -5,13 +5,13 @@ export const MESSAGE_TYPES = {
 
 export const EMOTION_TYPES = {
   NEUTRAL: 'neutral',
-  HAPPY: 'happy',
+  HAPPY: 'happy', 
   SAD: 'sad',
   ANGRY: 'angry',
   LOVE: 'love',
   LAUGHING: 'laughing',
   CURIOUS: 'curious',
-  BLINK: 'blink'
+  SURPRISED: 'surprised'
 };
 
 export const ERROR_TYPES = {

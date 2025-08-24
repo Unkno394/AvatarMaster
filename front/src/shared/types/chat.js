@@ -11,7 +11,8 @@ export const MessageType = {
     LOVE: 'love',
     LAUGHING: 'laughing',
     CURIOUS: 'curious',
-    BLINK: 'blink'
+    BLINK: 'blink',
+    SURPRISED: 'surprised'
   };
   
   export const ErrorType = {

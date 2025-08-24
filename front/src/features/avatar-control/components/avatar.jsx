@@ -1,6 +1,7 @@
 'use client';
 
 import { useAvatarEmotion } from '../hooks/use-avatar-emotion';
+import { EMOTION_TYPES } from '@/entities/chat/model/types';
 
 export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
   const { handleMouseEnter, handleMouseLeave } = useAvatarEmotion({
@@ -8,6 +9,9 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
     onMouseEnter,
     onMouseLeave
   });
+
+  // Используем emotion как есть, без нормализации
+  const currentEmotion = emotion || EMOTION_TYPES.NEUTRAL;
 
   return (
     <div className='flex items-center justify-center rounded-full bg-white 
@@ -19,11 +23,12 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
                     2xl:w-[600px] 2xl:h-[600px]'>
       <div className="avatar-glow"></div>
       <div 
-        className={`cat-avatar ${emotion}`}
+        className={`cat-avatar ${currentEmotion}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         <svg width="500" height="300" viewBox="0 0 71 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+          
           {/* Левые уши */}
           <path d="M7.597 8.13483C9.76357 4.81074 34.1349 13.752 26.3294 16.0585C18.5238 18.365 17.1843 20.0099 13.2675 25.9394C9.35072 31.869 5.43043 11.4589 7.597 8.13483Z" fill="#BFA72E"/>
           <path d="M9.36364 9.97657C11.1524 7.16625 32.2833 15.3831 25.6282 17.1959C18.9731 19.0087 17.8582 20.3935 14.6226 25.4055C11.387 30.4174 7.57483 12.7869 9.36364 9.97657Z" fill="#F3D646"/>
@@ -48,7 +53,7 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
           <path d="M47.0064 44.6438C47.0064 44.6438 53.1507 44.1468 57.0557 44.5398C60.5743 44.8939 65.9307 46.3386 65.9307 46.3386" stroke="black" strokeLinecap="round"/>
           
           <g className="eyes">
-            {emotion === 'love' ? (
+            {currentEmotion === EMOTION_TYPES.LOVE ? (
               <>
                 <path 
                   d="M22 30 Q24.5 25 27 30" 
@@ -65,13 +70,18 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
                   className="eye"
                 />
               </>
+            ) : currentEmotion === EMOTION_TYPES.SURPRISED ? (
+              <>
+                <circle cx="24.5" cy="31" r="4.5" fill="black" className="eye surprise"/>
+                <circle cx="45.5" cy="31" r="4.5" fill="black" className="eye surprise"/>
+              </>
             ) : (
               <>
                 <ellipse 
                   cx="24.5" 
                   cy="31" 
                   rx="3.5" 
-                  ry={emotion === 'blink' ? "0.5" : emotion === 'laughing' ? "2" : "5"} 
+                  ry={currentEmotion === 'blink' ? "0.5" : currentEmotion === EMOTION_TYPES.LAUGHING ? "2" : "5"} 
                   fill="black" 
                   className="eye"
                 />
@@ -79,7 +89,7 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
                   cx="45.5" 
                   cy="31" 
                   rx="3.5" 
-                  ry={emotion === 'blink' ? "0.5" : emotion === 'laughing' ? "2" : "5"} 
+                  ry={currentEmotion === 'blink' ? "0.5" : currentEmotion === EMOTION_TYPES.LAUGHING ? "2" : "5"} 
                   fill="black" 
                   className="eye"
                 />
@@ -89,7 +99,7 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
           
           {/* Брови */}
           <g className="eyebrows">
-            {emotion === 'angry' ? (
+            {currentEmotion === EMOTION_TYPES.ANGRY ? (
               <>
                 <path 
                   d="M29 24L20 22" 
@@ -106,7 +116,7 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
                   className="brow angry"
                 />
               </>
-            ) : emotion === 'sad' ? (
+            ) : currentEmotion === EMOTION_TYPES.SAD ? (
               <>
                 <path 
                   d="M20 24L29 22" 
@@ -123,7 +133,7 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
                   className="brow sad"
                 />
               </>
-            ) : emotion === 'happy' ? (
+            ) : currentEmotion === EMOTION_TYPES.HAPPY ? (
               <>
                 <path 
                   d="M20 25C22 22 27 22 29 25" 
@@ -138,6 +148,23 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
                   strokeWidth="2" 
                   strokeLinecap="round"
                   className="brow happy"
+                />
+              </>
+            ) : currentEmotion === EMOTION_TYPES.SURPRISED ? (
+              <>
+                <path 
+                  d="M20 22C22 19 27 19 29 22" 
+                  stroke="black" 
+                  strokeWidth="2" 
+                  strokeLinecap="round"
+                  className="brow surprise"
+                />
+                <path 
+                  d="M41 22C43 19 48 19 50 22" 
+                  stroke="black" 
+                  strokeWidth="2" 
+                  strokeLinecap="round"
+                  className="brow surprise"
                 />
               </>
             ) : (
@@ -167,16 +194,9 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
           />
           
           {/* Рот с разными выражениями */}
-          {(!['sad', 'angry'].includes(emotion)) && (
-            <path 
-              d="M27 50.5C27 50.5 32.4637 51.5 36 51.5C39.5363 51.5 45 50.5 45 50.5" 
-              stroke="black" 
-              strokeWidth="2" 
-              className="mouth neutral"
-            />
-          )}
-          
-          {emotion === 'sad' && (
+          {currentEmotion === EMOTION_TYPES.SURPRISED ? (
+            <circle cx="36" cy="48" r="3" fill="black" className="mouth surprise"/>
+          ) : currentEmotion === EMOTION_TYPES.SAD ? (
             <>
               <path 
                 d="M27 50.5C27 50.5 32.4637 47.5 36 47.5C39.5363 47.5 45 50.5 45 50.5" 
@@ -187,18 +207,21 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
               <circle cx="24.5" cy="35" r="1.5" fill="#48DBFB" className="tear-drop left" />
               <circle cx="45.5" cy="35" r="1.5" fill="#48DBFB" className="tear-drop right" />
             </>
-          )}
-          
-          {emotion === 'angry' && (
+          ) : currentEmotion === EMOTION_TYPES.ANGRY ? (
             <path 
               d="M27 52.5C27 52.5 32.4637 49.5 36 49.5C39.5363 49.5 45 52.5 45 52.5" 
               stroke="black" 
               strokeWidth="2" 
               className="mouth angry"
             />
-          )}
-          
-          {(emotion === 'neutral' || emotion === 'blink' || emotion === 'curious') && (
+          ) : currentEmotion === EMOTION_TYPES.HAPPY || currentEmotion === EMOTION_TYPES.LAUGHING ? (
+            <path 
+              d="M27 52.5C27 52.5 32.4637 54.5 36 54.5C39.5363 54.5 45 52.5 45 52.5" 
+              stroke="black" 
+              strokeWidth="2" 
+              className="mouth happy"
+            />
+          ) : (
             <path 
               d="M27 50.5C27 50.5 32.4637 51.5 36 51.5C39.5363 51.5 45 50.5 45 50.5" 
               stroke="black" 
@@ -222,7 +245,7 @@ export const Avatar = ({ emotion, onMouseEnter, onMouseLeave }) => {
           </defs>
         </svg>
         
-        {emotion === 'love' && (
+        {currentEmotion === EMOTION_TYPES.LOVE && (
           <div className="hearts-container">
             <div className="heart heart-mouth">❤</div>
             <div className="heart heart-nose">❤</div>

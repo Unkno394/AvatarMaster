@@ -7,6 +7,7 @@ export const useChatStore = create(
       messages: [],
       emotion: 'neutral',
       isLoading: false,
+      emotionTimer: null,
       
       addMessage: (message) => set((state) => ({ 
         messages: [...state.messages, message] 
@@ -29,7 +30,27 @@ export const useChatStore = create(
       
       clearMessages: () => set({ messages: [] }),
       
-      setEmotion: (emotion) => set({ emotion }),
+      setEmotion: (emotion) => {
+        // Очищаем предыдущий таймер
+        const { emotionTimer } = get();
+        if (emotionTimer) {
+          clearTimeout(emotionTimer);
+        }
+        
+        // Устанавливаем новую эмоцию
+        set({ emotion });
+        
+        // Если эмоция не neutral, устанавливаем таймер для сброса
+        if (emotion !== 'neutral') {
+          const timer = setTimeout(() => {
+            set({ emotion: 'neutral', emotionTimer: null });
+          }, 10000);
+          
+          set({ emotionTimer: timer });
+        } else {
+          set({ emotionTimer: null });
+        }
+      },
       
       setIsLoading: (loading) => set({ isLoading: loading })
     }),
